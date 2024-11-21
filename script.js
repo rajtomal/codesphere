@@ -57,7 +57,7 @@ modal.addEventListener('click', (event) => {
 
 // Databases Modal JS--------------------------------------------------------------------------------
 // Get elements
-const openModalDatabases = document.getElementById('openModalDatabases');
+const openModalDatabases = document.querySelectorAll('.openModalDatabases');
 const closeModalButtonsDatabases = document.querySelectorAll('#closeModalDatabases, #closeModalFooterDatabases');
 const modalDatabases = document.getElementById('modalDatabases');
 // Function to open the modal
@@ -69,7 +69,7 @@ const closeModalHandlerDatabases = () => {
   modalDatabases.classList.add('hidden');
 };
 // Add event listeners
-openModalDatabases.addEventListener('click', openModalHandlerDatabases);
+openModalDatabases.forEach(button => button.addEventListener('click', openModalHandlerDatabases));
 closeModalButtonsDatabases.forEach(button => button.addEventListener('click', closeModalHandlerDatabases));
 // Close modal when clicking outside the modal content
 modalDatabases.addEventListener('click', (event) => {
@@ -98,7 +98,7 @@ openModalDocker.addEventListener('click', openModalHandlerDocker);
 closeModalButtonsDocker.forEach(button => button.addEventListener('click', closeModalHandlerDocker));
 // Close modal when clicking outside the modal content
 modalDocker.addEventListener('click', (event) => {
-  if (event.target === modalDocker) {
+  if (event.target === modal) {
     closeModalHandlerDocker();
   }
 });
