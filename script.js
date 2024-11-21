@@ -73,7 +73,7 @@ openModalDatabases.addEventListener('click', openModalHandlerDatabases);
 closeModalButtonsDatabases.forEach(button => button.addEventListener('click', closeModalHandlerDatabases));
 // Close modal when clicking outside the modal content
 modalDatabases.addEventListener('click', (event) => {
-  if (event.target === modal) {
+  if (event.target === modalDatabases) {
     closeModalHandlerDatabases();
   }
 });
@@ -98,7 +98,7 @@ openModalDocker.addEventListener('click', openModalHandlerDocker);
 closeModalButtonsDocker.forEach(button => button.addEventListener('click', closeModalHandlerDocker));
 // Close modal when clicking outside the modal content
 modalDocker.addEventListener('click', (event) => {
-  if (event.target === modal) {
+  if (event.target === modalDocker) {
     closeModalHandlerDocker();
   }
 });
