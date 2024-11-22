@@ -57,7 +57,7 @@
                     class="h-[28px] w-[28px] bg-[#d941bd] font-bold text-[12px] text-white rounded-[3px] flex items-center justify-center ">TR</span>
             </div>
         </div>
-        <div class="w-full px-[1.25rem]">
+        <div class="w-full px-[1.25rem] overflow-auto">
             <div class="w-full h-[52px] flex items-center border-b border-[#282532]">
                 <button type="button"
                     class="px-4 h-[38px] flex gap-3 items-center justify-center text-[#AEACB8] text-[16px] hover:text-white">
@@ -186,7 +186,7 @@
     <!-- Page Container -->
 
     <div class="pt-[96px] w-full">
-        <div class="px-[2rem] py-[1.5rem]">
+        <div class="md:px-[3rem] lg:px-[3rem] px-[1rem] py-[1.5rem]">
 
             <!-- Databases Section -->
             <div class="flex justify-between items-center">
@@ -194,7 +194,7 @@
                     <h1 class="text-[#C9C4DF] text-[18px] font-bold ">Databases <span
                             class="ml-2 text-[#AEACB9]">0</span></h1>
                 </div>
-                <div class="flex items-center justify-center gap-3">
+                <div class="flex flex-col md:flex-row lg:flex-row items-end md:items-center lg:items-center justify-center gap-3">
                     <div class="relative">
 
                         <svg class="absolute left-[0.5rem] top-[0.6rem] z-10 text-[#AEACB9]" fill="none"
@@ -205,7 +205,7 @@
                         </svg>
 
                         <input type="text" placeholder="Search databases..."
-                            class="w-[24.25rem] text-[#AEACB9] placeholder:text-[#4C4A59] focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none text-[15px] font-semibold border border-[#282532] bg-transparent rounded-[3px] pl-[2rem] px-[0.5rem] py-[0.3rem]">
+                            class="w-[12rem] md:w-[24.25rem] lg:w-[24.25rem] text-[#AEACB9] placeholder:text-[#4C4A59] focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none text-[15px] font-semibold border border-[#282532] bg-transparent rounded-[3px] pl-[2rem] px-[0.5rem] py-[0.3rem]">
                     </div>
                     <button
                         class="openModalDatabases px-3 py-[6px] rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#7A4DF0] hover:bg-[#4B15C1] hover:text-white">
@@ -217,19 +217,19 @@
                     </button>
                 </div>
             </div>
-            <div class="mt-5">
-                <table class="table-auto w-full">
+            <div class="mt-5 overflow-x-auto">
+                <table class="table-auto w-full text-left">
                     <thead class="text-left bg-[#0F0E15] text-[12px]  text-[#AEACB9]">
                         <tr>
-                            <th class="py-1 px-2 font-[400]">Name (# of Stand-by nodes)</th>
-                            <th class="py-1 px-2 font-[400]">Region</th>
-                            <th class="py-1 px-2 font-[400]">Driver</th>
-                            <th class="py-1 px-2 font-[400]">Version</th>
-                            <th class="py-1 px-2 font-[400]">vCPU</th>
-                            <th class="py-1 px-2 font-[400]">Memory</th>
-                            <th class="py-1 px-2 font-[400]">Storage</th>
-                            <th class="py-1 px-2 font-[400]">Date created</th>
-                            <th class="py-1 px-2 font-[400]">Actions</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Name (# of Stand-by nodes)</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Region</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Driver</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Version</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">vCPU</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Memory</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Storage</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Date created</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="text-[14px] text-[#AEACB9]">
@@ -241,7 +241,7 @@
                 </table>
             </div>
         </div>
-        <div class="px-[2rem] py-[1.2rem] pt-[2.2rem]">
+        <div class="md:px-[3rem] lg:px-[3rem] px-[1rem] py-[1.2rem] pt-[2.2rem]">
 
             <!-- Docker deployments Section -->
             <div class="flex justify-between items-center">
@@ -249,7 +249,7 @@
                     <h1 class="text-[#C9C4DF] text-[18px] font-bold ">Docker deployments<span
                             class="ml-2 text-[#AEACB9]">0</span></h1>
                 </div>
-                <div class="flex items-center justify-center gap-3">
+                <div class="flex flex-col md:flex-row lg:flex-row items-end md:items-center lg:items-center justify-center gap-3">
                     <div class="relative">
 
                         <svg class="absolute left-[0.5rem] top-[0.6rem] z-10 text-[#AEACB9]" fill="none"
@@ -260,7 +260,7 @@
                         </svg>
 
                         <input type="text" placeholder="Search deployments..."
-                            class="w-[24.25rem] text-[#AEACB9] placeholder:text-[#4C4A59] focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none text-[15px] font-semibold border border-[#282532] bg-transparent rounded-[3px] pl-[2rem] px-[0.5rem] py-[0.3rem]">
+                            class="w-[12rem] md:w-[24.25rem] lg:w-[24.25rem] text-[#AEACB9] placeholder:text-[#4C4A59] focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none text-[15px] font-semibold border border-[#282532] bg-transparent rounded-[3px] pl-[2rem] px-[0.5rem] py-[0.3rem]">
                     </div>
                     <button id="openModalDocker"
                         class="px-3 py-[6px] rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#7A4DF0] hover:bg-[#4B15C1] hover:text-white">
@@ -272,28 +272,28 @@
                     </button>
                 </div>
             </div>
-            <div class="mt-5">
+            <div class="mt-5 overflow-x-auto">
                 <table class="table-auto w-full">
                     <thead class="text-left bg-[#0F0E15] text-[12px]  text-[#AEACB9]">
                         <tr>
-                            <th class="py-1 px-2 font-[400]">Name</th>
-                            <th class="py-1 px-2 font-[400]">Region</th>
-                            <th class="py-1 px-2 font-[400]">Status</th>
-                            <th class="py-1 px-2 font-[400]">Image</th>
-                            <th class="py-1 px-2 font-[400]">Port</th>
-                            <th class="py-1 px-2 font-[400]">vCPU</th>
-                            <th class="py-1 px-2 font-[400]">Memory</th>
-                            <th class="py-1 px-2 font-[400]">Date created</th>
-                            <th class="py-1 px-2 font-[400]">Owner</th>
-                            <th class="py-1 px-2 font-[400]">Actions</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Name</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Region</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Status</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Image</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Port</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">vCPU</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Memory</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Date created</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Owner</th>
+                            <th class="py-1 px-2 font-[400] whitespace-nowrap">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="text-[14px] text-[#AEACB9]">
                         <tr>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">RabbitMQ</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">RabbitMQ</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                            Frankfurt</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                                 <div class="flex gap-2 items-center">
                                     <svg class="text-[#38ff00]" xmlns="http://www.w3.org/2000/svg" width="18px"
                                         height="18px" viewBox="0 0 24 24">
@@ -303,19 +303,19 @@
                                     <span>Deployed</span>
                                 </div>
                             </td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">rabbitmq</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">15672</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">1</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">1GB</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">November 8, 2024</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
-                                <div class="flex items-center gap-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">rabbitmq</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">15672</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">1</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">1GB</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">November 8, 2024</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
+                                <div class="flex items-center gap-2 w-max">
                                     <img class="w-[30px] h-[30px] object-cover rounded-[3px]"
                                         src="https://ashallendesign.ams3.cdn.digitaloceanspaces.com/rMbsGOyK6i1KjNkbXff8qLohzM1nWQA8HNGwHF0J.png" alt="">
-                                    Alexander Voll
+                                    <span>Alexander Voll</span>
                                 </div>
                             </td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                                 <button
                                     class="p-[6px]  rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#302e40] hover:bg-[#7A4DF0] hover:text-white"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
@@ -348,10 +348,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">Qdrant</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">Qdrant</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                            Frankfurt</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                                 <div class="flex gap-2 items-center">
                                     <svg class="text-[#38ff00]" xmlns="http://www.w3.org/2000/svg" width="18px"
                                         height="18px" viewBox="0 0 24 24">
@@ -361,19 +361,19 @@
                                     <span>Deployed</span>
                                 </div>
                             </td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">qdrant/qdrant</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">6333</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">1</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">512MB</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">November 8, 2024</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
-                                <div class="flex items-center gap-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">qdrant/qdrant</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">6333</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">1</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">512MB</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">November 8, 2024</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
+                                <div class="flex items-center gap-2 w-max">
                                     <img class="w-[30px] h-[30px] object-cover rounded-[3px]"
                                         src="https://ashallendesign.ams3.cdn.digitaloceanspaces.com/rMbsGOyK6i1KjNkbXff8qLohzM1nWQA8HNGwHF0J.png" alt="">
-                                    Elias Schneider
+                                    <span>Elias Schneider</span>
                                 </div>
                             </td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                                 <button
                                     class="p-[6px]  rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#302e40] hover:bg-[#7A4DF0] hover:text-white"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
@@ -385,10 +385,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">Redis ITZ Bund</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">Redis ITZ Bund</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                            Frankfurt</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                                 <div class="flex gap-2 items-center">
                                     <svg class="text-[#38ff00]" xmlns="http://www.w3.org/2000/svg" width="18px"
                                         height="18px" viewBox="0 0 24 24">
@@ -398,19 +398,19 @@
                                     <span>Deployed</span>
                                 </div>
                             </td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">redis/redis</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">6379</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">1</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">1GB</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">December 8, 2024</td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
-                                <div class="flex items-center gap-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">redis/redis</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">6379</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">1</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">1GB</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">December 8, 2024</td>
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
+                                <div class="flex items-center gap-2 w-max">
                                     <img class="w-[30px] h-[30px] object-cover rounded-[3px]"
                                         src="https://ashallendesign.ams3.cdn.digitaloceanspaces.com/rMbsGOyK6i1KjNkbXff8qLohzM1nWQA8HNGwHF0J.png" alt="">
-                                    Alexander Voll
+                                    <span>Alexander Voll</span>
                                 </div>
                             </td>
-                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2">
+                            <td class="font-normal border-b-[1px] border-[#282532] py-2 px-2 whitespace-nowrap">
                                 <button
                                     class="p-[6px]  rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#302e40] hover:bg-[#7A4DF0] hover:text-white"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
@@ -484,7 +484,7 @@
 
     <!-------- Databases Modal---------->
     <div id="modalDatabases" class="fixed inset-0 flex items-center justify-center bg-[#000c] hidden z-50">
-        <div class="bg-[#181621] rounded-lg shadow-lg max-w-[40rem] w-full">
+        <div class="bg-[#181621] rounded-lg shadow-lg max-w-[40rem] w-full m-4 md:m-0 lg:m-0">
             <!-- Modal Header -->
             <div class="flex justify-center items-center relative py-4 px-6">
                 <h3 class="text-lg font-semibold text-center text-white">Create database</h3>
@@ -495,8 +495,8 @@
             <div class="pt-[1.75rem] pb-[2.5rem] px-[2.5rem]">
                 <div class="flex items-center mb-6">
                     <label class="text-[#AEACB9] text-[14px] font-[600] w-[30%]">Engine</label>
-                    <div class="flex gap-3 w-[70%]">
-                        <div class="relative inline-block w-[50%]">
+                    <div class="flex gap-3 w-[70%] flex-col md:flex-row lg:flex-row">
+                        <div class="relative inline-block w-[100%] md:w-[50%] lg:w-[50%]">
                             <button
                                 class="custom-select-toggle w-full bg-transparent text-[#AEACB9] border border-[#282532] text-sm font-medium px-4 py-2 rounded-md flex justify-between items-center focus:outline-none focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none">
                                 <span class="custom-select-value">Select an option</span>
@@ -518,7 +518,7 @@
                             </div>
                         </div>
                         <input
-                            class="w-[50%] bg-transparent text-[#AEACB9] border border-[#282532] text-sm font-medium px-4 py-2 rounded-md flex justify-between items-center focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none"
+                            class="w-[100%] md:w-[50%] lg:w-[50%] bg-transparent text-[#AEACB9] border border-[#282532] text-sm font-medium px-4 py-2 rounded-md flex justify-between items-center focus:ring-1 focus:ring-[#7A4DF0] focus-visible:outline-none"
                             type="text" placeholder="8">
                     </div>
                 </div>
@@ -580,9 +580,9 @@
                                 <td class="py-2 px-2">
                                     <div class="flex gap-3">
                                         <button
-                                            class="px-3 py-[6px] rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#7A4DF0] hover:bg-[#4B15C1] hover:text-white">Add</button>
+                                            class="px-3 py-[6px] rounded-[3px] flex gap-1 items-center justify-center text-white text-[15px] bg-[#7A4DF0] hover:bg-[#4B15C1] hover:text-white"><span class="hidden md:block lg:block">Add</span><svg class="block md:hidden lg:hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1"/></svg></button>
                                         <button
-                                            class="px-3 py-[6px] rounded-[3px] flex gap-1 items-center border border-[#282532] justify-center text-white text-[15px] bg-transparent hover:bg-[#1E1E1E]">Cancel</button>
+                                            class="px-3 py-[6px] rounded-[3px] flex gap-1 items-center border border-[#282532] justify-center text-white text-[15px] bg-transparent hover:bg-[#1E1E1E]"><span class="hidden md:block lg:block">Cancel</span><svg class="block md:hidden lg:hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 5L5 19M5 5l14 14" color="currentColor"/></svg></button>
                                     </div>
                                 </td>
                             </tr>
@@ -603,7 +603,7 @@
 
     <!-------- Docker deployments Modal---------->
     <div id="modalDocker" class="fixed inset-0 flex items-center justify-center bg-[#000c] hidden z-50">
-        <div class="bg-[#181621] rounded-lg shadow-lg max-w-[40rem] w-full">
+        <div class="bg-[#181621] rounded-lg shadow-lg max-w-[40rem] w-full m-4 md:m-0 lg:m-0">
             <!-- Modal Header -->
             <div class="flex justify-center items-center relative py-4 px-6">
                 <h3 class="text-lg font-semibold text-center text-white">Create deployment</h3>

@@ -1,6 +1,3 @@
-
-
-
 // Select elements------------------------------------------------------------------------
 const dropdownToggle = document.getElementById('dropdownToggle');
 const dropdownMenu = document.getElementById('dropdownMenu');
@@ -94,14 +91,18 @@ const closeModalHandlerDocker = () => {
   modalDocker.classList.add('hidden');
 };
 // Add event listeners
-openModalDocker.addEventListener('click', openModalHandlerDocker);
+if (openModalDocker) {
+  openModalDocker.addEventListener('click', openModalHandlerDocker);
+}
 closeModalButtonsDocker.forEach(button => button.addEventListener('click', closeModalHandlerDocker));
 // Close modal when clicking outside the modal content
-modalDocker.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    closeModalHandlerDocker();
-  }
-});
+if (modalDocker) {
+  modalDocker.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModalHandlerDocker();
+    }
+  })
+};
 
 
 
@@ -113,6 +114,8 @@ const customSelectOptions = document.querySelectorAll('.custom-select-option');
 
 // Add click event to toggle dropdown visibility for each select button
 customSelectToggles.forEach((toggle, index) => {
+  console.log('Number of customSelectToggles:', customSelectToggles.length);
+  console.log('Number of customSelectOptions:', customSelectOptions.length);
   toggle.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevent closing the dropdown immediately
     // Toggle the menu visibility for the clicked select
@@ -122,6 +125,8 @@ customSelectToggles.forEach((toggle, index) => {
 
 // Handle item selection for each dropdown
 customSelectOptions.forEach(option => {
+  console.log('Number of customSelectToggles:', customSelectToggles.length);
+  console.log('Number of customSelectOptions:', customSelectOptions.length);
   option.addEventListener('click', (event) => {
     const selectedValue = event.target.getAttribute('data-value');
     // Find the corresponding custom select to update its value
@@ -141,4 +146,3 @@ document.addEventListener('click', () => {
     menu.classList.add('hidden');
   });
 });
-
